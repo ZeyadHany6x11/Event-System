@@ -184,21 +184,6 @@ http://127.0.0.1:8000/admin
 
 ---
 
-# Team Members
-
-- Zeyad Hany Saeed Othman — 20230120 — Section 5
-- Amr Ahmed Mohamed Othman — 20230224 — Section 7
-- Ahmed Hassan Mohamed El-Sawy — 20230444 — Section 1
-- Mohamed Emad Mohamed Abdo — 20230434 — Section 5
-
----
-
-# Supervisor
-
-Dr. Rehab Ibrahem
-
----
-
 # License
 
 This project was developed for educational purposes as part of the Advanced Software Engineering course.
