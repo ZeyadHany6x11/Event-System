@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <a href="/" class="btn btn-light mb-4">
+        Back
+    </a>
+
+    <div class="card bg-black text-light p-4 shadow-lg">
+
+        <h1>{{ event.title }}</h1>
+
+        <img src="{{ event.image }}" class="img-fluid rounded mb-4">
+
+        <p class="mt-3">
+            {{ event.description }}
+        </p>
+
+        <h4 class="mt-4">
+            📅 {{ event.date }}
+        </h4>
+
+        <p>
+            Days Remaining:
+            {{ event.date|timeuntil }}
+        </p>
+
+        <h4>
+            🎟 Seats: {{ event.seats }}
+        </h4>
+
+        {% if event.seats == 0 %}
+
+            <div class="alert alert-danger mt-3">
+                Sold Out
+            </div>
+
+        {% else %}
+
+            <div class="alert alert-success mt-3">
+                Tickets Available
+            </div>
+
+            <a href="/book/{{ event.id }}/" class="btn btn-success mt-3">
+                Book Now
+            </a>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

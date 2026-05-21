@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(to right, #1f2937, #111827);
+    color: white;
+    font-family: Arial;
+}
+
+.card{
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.navbar{
+    background: black;
+}
